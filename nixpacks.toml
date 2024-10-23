@@ -16,8 +16,9 @@ cmds = [
 ]
 
 [start]
-cmd = "python3 -m redbot mydiscordbot --no-prompt --token $DISCORD_TOKEN -p $DISCORD_PREFIX"
+cmd = "python3 -m redbot mydiscordbot --no-prompt --token $DISCORD_TOKEN -p $DISCORD_PREFIX $ADDITIONAL_LAUNCH_ARGS"
 
 [variables]
 DISCORD_TOKEN = "${{DISCORD_TOKEN}}"
 DISCORD_PREFIX = "${{DISCORD_TOKEN}}"
+ADDITIONAL_LAUNCH_ARGS = ""
