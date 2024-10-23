@@ -7,6 +7,7 @@ Red is a fully modular bot – meaning all features and commands can be enabled/
 Installation is easy, and you do NOT need to know anything about coding! Aside from installing and updating, every part of the bot can be controlled from within Discord.
 
 It's even easier on Railway using this template!
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/Ux74pW?referralCode=IrZ8Jr)
 
 [How to create a Discord Bot Account](https://docs.discord.red/en/stable/bot_application_guide.html)
