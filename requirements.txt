@@ -1,0 +1,4 @@
+Red-DiscordBot
+aiohttp
+discord.py
+psycopg2
