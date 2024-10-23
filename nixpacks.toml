@@ -1,0 +1,26 @@
+# nixpacks.toml
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+dependencies = [
+    "Red-DiscordBot",
+"aiohttp",
+"discord.py",
+"psycopg2"
+]
+
+[phases.build]
+cmds = [
+    "redbot-setup --no-prompt --instance-name mydiscordbot --backend json --data-path /var/lib/Red-DiscordBot/data",
+]
+
+[start]
+cmd = "python3 -m redbot mydiscordbot --no-prompt --token $DISCORD_TOKEN -p $DISCORD_PREFIX"
+
+[variables]
+DISCORD_TOKEN = "${{DISCORD_TOKEN}}"
+DISCORD_PREFIX = "${{DISCORD_TOKEN}}"
+POSTGRES_HOST = "${{POSTGRES_HOST}}"
+POSTGRES_USER = "${{POSTGRES_USER}}"
+POSTGRES_PASSWORD = "${{POSTGRES_PASSWORD}}"
