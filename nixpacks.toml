@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 
 dependencies = [
     "Red-DiscordBot",
-"aiohttp",
-"discord.py",
-"psycopg2"
+    "aiohttp",
+    "discord.py",
+    "psycopg2"
 ]
 
 [phases.build]
@@ -21,6 +21,3 @@ cmd = "python3 -m redbot mydiscordbot --no-prompt --token $DISCORD_TOKEN -p $DIS
 [variables]
 DISCORD_TOKEN = "${{DISCORD_TOKEN}}"
 DISCORD_PREFIX = "${{DISCORD_TOKEN}}"
-POSTGRES_HOST = "${{POSTGRES_HOST}}"
-POSTGRES_USER = "${{POSTGRES_USER}}"
-POSTGRES_PASSWORD = "${{POSTGRES_PASSWORD}}"
