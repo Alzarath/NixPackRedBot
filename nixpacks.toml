@@ -4,10 +4,9 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 dependencies = [
-    "Red-DiscordBot",
-    "aiohttp",
-    "discord.py",
-    "psycopg2"
+    "pip",
+    "wheel",
+    "Red-DiscordBot"
 ]
 
 [phases.build]
@@ -16,7 +15,7 @@ cmds = [
 ]
 
 [start]
-cmd = "python3 -m redbot mydiscordbot --no-prompt --token $DISCORD_TOKEN -p $DISCORD_PREFIX $ADDITIONAL_LAUNCH_ARGS"
+cmd = "redbot mydiscordbot --no-prompt --token $DISCORD_TOKEN -p $DISCORD_PREFIX $ADDITIONAL_LAUNCH_ARGS"
 
 [variables]
 DISCORD_TOKEN = "${{DISCORD_TOKEN}}"
